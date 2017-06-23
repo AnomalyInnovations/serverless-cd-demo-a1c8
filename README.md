@@ -58,11 +58,11 @@ $ git push
 
 Check out the new staging build in the dashboard
 
-> [**ServerlessCD Dashboard**][dashboard]
+* [**ServerlessCD Dashboard**][dashboard]
 
 Promote it to production once it's complete
 
-> [**Staging**][staging]
+* [**Staging**][staging]
 
 Enjoy!
 
