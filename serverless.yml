@@ -1,0 +1,31 @@
+service: serverless-cd-demo-a1c8
+
+# Use the serverless-webpack plugin to transpile ES6
+plugins:
+  - serverless-webpack
+
+# Enable auto-packing of external modules
+custom:
+  webpackIncludeModules: true
+  stage: ${opt:stage, self:provider.stage}
+  prod:
+    MESSAGE: 'I am prod'
+  dev:
+    MESSAGE: 'I am dev'
+  local:
+    MESSAGE: 'I am local'
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  stage: local
+  region: us-east-1
+  environment: ${self:custom.${self:custom.stage}}
+
+functions:
+  hello:
+    handler: handler.main
+    events:
+      - http:
+          path: /
+          method: get
