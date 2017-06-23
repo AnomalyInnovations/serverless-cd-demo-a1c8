@@ -10,14 +10,14 @@ You can view the ServerlessCD dashboard for this project [**here**][dashboard].
 
 Here are a few things ServerlessCD supports out of the box:
 
-- New build is triggered after a `git push` to the master branch.
-- Master is linked to the [Staging][staging] environment.
-- New build runs it's tests on Travis [![Build Status](https://travis-ci.org/AnomalyInnovations/serverless-cd-demo-a1c8.svg?branch=master)](https://travis-ci.org/AnomalyInnovations/serverless-cd-demo-a1c8)
-- Build is deployed to Staging, if the tests run successfully.
+- New builds are triggered after a `git push` to the master branch.
+- Master is linked to the [**Staging**][staging] environment.
+- Tests are run on Travis [![Build Status](https://travis-ci.org/AnomalyInnovations/serverless-cd-demo-a1c8.svg?branch=master)](https://travis-ci.org/AnomalyInnovations/serverless-cd-demo-a1c8)
+- Builds are deployed to Staging, if the tests run successfully.
 - Staging [**endpoint**][stEndpoint] is deployed using the staging environment variables.
-- **Promote** the build to Production from the dashboard.
+- **Promote** a build to Production from the dashboard.
 - Production [**endpoint**][prEndpoint] is deployed using the production environment variables.
-- One click **Rollback** through the [Production][prod] stage in the dashboard.
+- One click **Rollback** through the [**Production**][prod] stage in the dashboard.
 
 ### About this demo project
 
@@ -66,7 +66,7 @@ Promote it to production once it's complete
 
 Enjoy!
 
-#### Feedback
+### Feedback
 
 Send us your feedback via Twitter to Frank Wang ([@fanjiewang][fTwitter]) or Jay V ([@jayair][jTwitter]). Or send us an [email][email].
 
