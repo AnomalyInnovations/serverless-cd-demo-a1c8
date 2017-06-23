@@ -60,9 +60,7 @@ Check out the new staging build in the dashboard
 
 * [**ServerlessCD Dashboard**][dashboard]
 
-Promote it to production once it's complete
-
-* [**Staging**][staging]
+And Promote it to production once it's complete.
 
 Enjoy!
 
