@@ -19,6 +19,11 @@ Here are a few things ServerlessCD supports out of the box:
 - **Promote** a build to Production from the dashboard.
 - Production [**endpoint**][prEndpoint] is deployed using the production environment variables.
 - One click **Rollback** through the [**Production**][prod] stage in the dashboard.
+
+### Requirements
+
+ServerlessCD needs the following to set up your project:
+
 - Deploys to **your AWS account** with your IAM User Access Key and Secret Key.
 - Links to **your GitHub repo** using your GitHub personal access token.
 
