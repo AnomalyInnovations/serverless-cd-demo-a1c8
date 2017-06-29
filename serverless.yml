@@ -10,10 +10,13 @@ custom:
   stage: ${opt:stage, self:provider.stage}
   prod:
     MESSAGE: 'I am prod'
+    AUDIENCE: 'World'
   dev:
     MESSAGE: 'I am dev'
+    AUDIENCE: 'Beta testers'
   local:
     MESSAGE: 'I am local'
+    AUDIENCE: 'Just Me'
 
 provider:
   name: aws
@@ -28,4 +31,10 @@ functions:
     events:
       - http:
           path: /
+          method: get
+  hi:
+    handler: handler.hello
+    events:
+      - http:
+          path: /hello
           method: get
