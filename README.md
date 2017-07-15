@@ -1,3 +1,6 @@
+# Note: This project and the dashboard are under-maintainence.
+
+
 # ServerlessCD Demo
 
 This is a demo Serverless Framework project to show the ServerlessCD service in action.
