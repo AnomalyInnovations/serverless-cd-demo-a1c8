@@ -8,10 +8,9 @@ Here are a few things ServerlessCD supports out of the box:
 
 - New builds are triggered after a `git push` to the master branch.
 - Master is linked to the **dev** stage.
-- Tests are run on Travis [![Build Status](https://travis-ci.org/AnomalyInnovations/serverless-cd-demo-a1c8.svg?branch=master)](https://travis-ci.org/AnomalyInnovations/serverless-cd-demo-a1c8)
-- Tested builds are created with Staging **and** Production artifacts.
-- Builds are **automatically** deployed to Staging.
-- Staging [**endpoint**][stEndpoint] is deployed using the staging environment variables.
+- Tested builds are created with Dev **and** Production artifacts.
+- Builds are **automatically** deployed to Dev.
+- Dev [**endpoint**][stEndpoint] is deployed using the dev environment variables.
 - **Promote** a build to Production from the dashboard.
 - Production [**endpoint**][prEndpoint] is deployed using the production environment variables.
 - One click **Rollback** through the **Production** stage in the dashboard.
