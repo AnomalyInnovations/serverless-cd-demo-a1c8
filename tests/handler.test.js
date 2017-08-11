@@ -6,7 +6,7 @@ test('handler', async () => {
   const expected = {
     statusCode: 200,
     body: JSON.stringify({
-      version: 'v5',
+      version: 'v6',
     }),
   };
 
