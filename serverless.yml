@@ -8,20 +8,15 @@ plugins:
 custom:
   webpackIncludeModules: true
   stage: ${opt:stage, self:provider.stage}
-  prod:
+  production:
     MESSAGE: 'I am prod'
-    AUDIENCE: 'World'
   dev:
     MESSAGE: 'I am dev'
-    AUDIENCE: 'Beta testers'
-  local:
-    MESSAGE: 'I am local'
-    AUDIENCE: 'Just Me'
 
 provider:
   name: aws
   runtime: nodejs6.10
-  stage: local
+  stage: dev
   region: us-east-1
   environment: ${self:custom.${self:custom.stage}}
 
@@ -32,9 +27,4 @@ functions:
       - http:
           path: /
           method: get
-  hi:
-    handler: handler.hello
-    events:
-      - http:
-          path: /hello
-          method: get
+
