@@ -13,6 +13,8 @@ Here are a few things ServerlessCD supports out of the box:
 - Dev [**endpoint**][stEndpoint] is deployed using the dev environment variables.
 - **Promote** a build to Production from the dashboard.
 - Production [**endpoint**][prEndpoint] is deployed using the production environment variables.
+- Secrets can be set through the Settings in the dashboard.
+- Secrets are encrypted using your AWS KMS key.
 - One click **Rollback** through the **Production** stage in the dashboard.
 
 ### Requirements
