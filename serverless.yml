@@ -9,9 +9,13 @@ custom:
   webpackIncludeModules: true
   stage: ${opt:stage, self:provider.stage}
   production:
-    MESSAGE: 'I am prod'
+    MESSAGE: 'I am PRODUCTION'
   dev:
-    MESSAGE: 'I am dev'
+    MESSAGE: 'I am DEV'
+  alpha:
+    MESSAGE: 'I am ALPHA'
+  beta:
+    MESSAGE: 'I am BETA'
 
 provider:
   name: aws
