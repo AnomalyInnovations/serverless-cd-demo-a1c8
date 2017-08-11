@@ -3,15 +3,11 @@ import * as handler from '../handler';
 test('handler', async () => {
   const event = {};
   const context = {};
-  const expected = {
-    statusCode: 200,
-    body: JSON.stringify({
-      version: 'v7',
-    }),
-  };
+  const expected = 'v7';
 
   function callback(error, result) {
-    expect(result).toEqual(expected);
+    const resultBody = JSON.parse(result.body);
+    expect(resultBody.version).toEqual(expected);
   }
 
   expect.assertions(1);
