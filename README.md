@@ -1,27 +1,19 @@
-# Note: This project and the dashboard are under-maintainence.
-
-
 # ServerlessCD Demo
 
 This is a demo Serverless Framework project to show the ServerlessCD service in action.
-
-### ServerlessCD Dashboard
-
-You can view the ServerlessCD dashboard for this project [**here**][dashboard].
 
 ### ServerlessCD Features
 
 Here are a few things ServerlessCD supports out of the box:
 
 - New builds are triggered after a `git push` to the master branch.
-- Master is linked to the [**Staging**][staging] environment.
-- Tests are run on Travis [![Build Status](https://travis-ci.org/AnomalyInnovations/serverless-cd-demo-a1c8.svg?branch=master)](https://travis-ci.org/AnomalyInnovations/serverless-cd-demo-a1c8)
-- Tested builds are created with Staging **and** Production artifacts.
-- Builds are **automatically** deployed to Staging.
-- Staging [**endpoint**][stEndpoint] is deployed using the staging environment variables.
+- Master is linked to the **dev** stage.
+- Tested builds are created with Dev **and** Production artifacts.
+- Builds are **automatically** deployed to Dev.
+- Dev [**endpoint**][stEndpoint] is deployed using the dev environment variables.
 - **Promote** a build to Production from the dashboard.
 - Production [**endpoint**][prEndpoint] is deployed using the production environment variables.
-- One click **Rollback** through the [**Production**][prod] stage in the dashboard.
+- One click **Rollback** through the **Production** stage in the dashboard.
 
 ### Requirements
 
@@ -67,12 +59,6 @@ $ git commit
 $ git push
 ```
 
-Check out the new staging build in the dashboard
-
-* [**ServerlessCD Dashboard**][dashboard]
-
-And Promote it to production once it's complete.
-
 Enjoy!
 
 ### Feedback
@@ -80,11 +66,8 @@ Enjoy!
 Send us your feedback via Twitter to Frank Wang ([@fanjiewang][fTwitter]) or Jay V ([@jayair][jTwitter]). Or send us an [email][email].
 
 
-[dashboard]: http://serverless-cd.anoma.ly/projects/95164043
-[staging]: http://serverless-cd.anoma.ly/projects/95164043/stages/dev
-[prod]: http://serverless-cd.anoma.ly/projects/95164043/stages/prod
-[stEndpoint]: https://hm31ou82w9.execute-api.us-east-1.amazonaws.com/dev
-[prEndpoint]: https://t4ee0xoiyg.execute-api.us-east-1.amazonaws.com/prod
+[stEndpoint]: https://mcr5wzx6d7.execute-api.us-east-1.amazonaws.com/dev
+[prEndpoint]: https://0xpsebpf9a.execute-api.us-east-1.amazonaws.com/prod
 [enVariables]: https://github.com/AnomalyInnovations/serverless-cd-demo-a1c8/blob/master/serverless.yml#L10
 [jest]: https://facebook.github.io/jest/
 [handler]: https://github.com/AnomalyInnovations/serverless-cd-demo-a1c8/blob/master/handler.js
