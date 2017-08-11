@@ -3,7 +3,7 @@ import * as handler from '../handler';
 test('handler', async () => {
   const event = {};
   const context = {};
-  const expected = 'v7';
+  const expected = 'v8';
 
   function callback(error, result) {
     const resultBody = JSON.parse(result.body);
