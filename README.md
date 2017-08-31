@@ -1,10 +1,10 @@
-# ServerlessCD Demo
+# Seed Demo
 
-This is a demo Serverless Framework project to show the ServerlessCD service in action.
+This is a demo Serverless Framework project to show off Seed in action.
 
-### ServerlessCD Features
+### Seed Features
 
-Here are a few things ServerlessCD supports out of the box:
+Here are a few things Seed supports out of the box:
 
 - New builds are triggered after a `git push` to the master branch.
 - Master is linked to the **dev** stage.
@@ -19,7 +19,7 @@ Here are a few things ServerlessCD supports out of the box:
 
 ### Requirements
 
-ServerlessCD needs the following to set up your project:
+Seed needs the following to set up your project:
 
 - Deploys to **your AWS account** with your IAM User Access Key and Secret Key.
 - Links to **your GitHub repo** using your GitHub personal access token.
