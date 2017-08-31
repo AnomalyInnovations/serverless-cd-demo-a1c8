@@ -1,4 +1,4 @@
-# Seed Demo
+# Seed Demo Project
 
 This is a demo Serverless Framework project to show off Seed in action.
 
